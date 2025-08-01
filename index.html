@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Book Recommendation System</title>
+    <link rel="stylesheet" href="style.css" />
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        background: #f7f7f7;
+        padding: 40px;
+        max-width: 600px;
+        margin: auto;
+        border-radius: 10px;
+      }
+      h2 {
+        text-align: center;
+        color: #333;
+      }
+      form {
+        background: #fff;
+        padding: 20px;
+        border-radius: 10px;
+        box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+      }
+      input {
+        display: block;
+        width: 95%;
+        padding: 10px;
+        margin-bottom: 15px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+      }
+      button {
+        background: #007bff;
+        color: white;
+        padding: 10px 15px;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+      }
+      button:hover {
+        background: #0056b3;
+      }
+      #recommendation {
+        margin-top: 20px;
+        font-weight: bold;
+        color: green;
+        text-align: center;
+      }
+    </style>
+  </head>
+  <body>
+    <h2>📚 Book Recommendation System</h2>
+
+    <form id="bookForm">
+      <input type="text" id="name" placeholder="Enter your name" required />
+      <input
+        type="number"
+        id="age"
+        placeholder="Enter your age"
+        required
+        min="10"
+      />
+      <input
+        type="text"
+        id="genre"
+        placeholder="Enter genre (e.g., fiction, fantasy, science)"
+        required
+      />
+      <button type="submit">Get Recommendation</button>
+    </form>
+
+    <p id="recommendation"></p>
+
+    <script src="script.js"></script>
+  </body>
+</html>
